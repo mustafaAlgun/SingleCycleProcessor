@@ -1,0 +1,4 @@
+module ConstantValueGenerator #(parameter W=8, parameter value=4)(OUTPUT);
+output wire [W-1:0] OUTPUT;
+assign OUTPUT = value;
+endmodule 

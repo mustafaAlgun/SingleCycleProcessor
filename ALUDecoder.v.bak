@@ -1,0 +1,82 @@
+module ALUDecoder(ALUOp,funct_4_0,ALUControl,FlagW,sh);
+input ALUOp;
+//function part of instruction
+input [4:0] funct_4_0;
+//Shift type
+input [1:0] sh;
+output reg [2:0] ALUControl=3'd0;
+output reg [1:0] FlagW=3'd0;
+
+always @(*) begin
+	//if operation is data processing assign correct signals
+	if(ALUOp) begin
+		case (funct_4_0[4:1])
+			//addition operation
+			4'b0100: begin
+							ALUControl=3'b000;
+							//S bit is set so change set FlagW accordingly
+							if(funct_4_0[0])
+								FlagW=2'b11;
+							//otherwise don't set FlagW
+							else
+								FlagW=2'b00;
+						end
+			//substraction operation
+			4'b0010: begin
+							ALUControl=3'b001;
+							//S bit is set so change set FlagW accordingly
+							if(funct_4_0[0])
+								FlagW=2'b11;
+							//otherwise don't set FlagW
+							else
+								FlagW=2'b00;
+						end
+			//AND operation
+			4'b0000:begin
+							ALUControl=3'b011;
+							//S bit is set so change set FlagW accordingly
+							if(funct_4_0[0])
+								FlagW=2'b10;
+							//otherwise don't set FlagW
+							else
+								FlagW=2'b00;
+						end
+			//OR operation
+			4'b1100:begin
+							ALUControl=3'b100;
+							//S bit is set so change set FlagW accordingly
+							if(funct_4_0[0])
+								FlagW=2'b10;
+							//otherwise don't set FlagW
+							else
+								FlagW=2'b00;
+						end
+			//Shift operation
+			4'b1101: begin
+							//Logical shift left
+							if(sh==2'b00) 
+								ALUControl=3'b110;
+							//Logical shift right
+							else if (sh==2'b01)
+								ALUControl=3'b101;
+							//S bit is set so change set FlagW accordingly
+							if(funct_4_0[0])
+								FlagW=2'b10;
+							//otherwise don't set FlagW
+							else
+								FlagW=2'b00;
+						end
+			//CMP operation
+			4'b1010: begin
+							ALUControl=3'b010;
+							FlagW=2'b11;
+						end
+		endcase
+	end	
+	//if operation is not data processing make addition and don't change flags
+	else begin
+		ALUControl=3'b000;
+		FlagW=2'b00;
+	end
+end
+endmodule

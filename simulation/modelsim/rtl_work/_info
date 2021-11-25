@@ -1,0 +1,257 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Mustafa\Desktop\METU\2021 Spring\EE446\LAB3\simulation\modelsim
+vAdder
+IXHYc0Q:WA_U;509UEc6`K1
+V;z>26cKlekg77_o?RXimd1
+Z1 dC:\Users\Mustafa\Desktop\METU\2021 Spring\EE446\LAB3\simulation\modelsim
+w1619903660
+8C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Adder.v
+FC:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Adder.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3} -O0
+n@adder
+!i10b 1
+!s100 NUPPTU>M7oVA5SaXYeE2f1
+!s85 0
+!s108 1619971289.446000
+!s107 C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3|C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Adder.v|
+!s101 -O0
+vArithmeticLogicUnit
+I=dbN^Bl^D:Me_>RBzldNM3
+VSikgTW?lIl:ZfICTf`_H>2
+R1
+w1619903644
+8C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ArithmeticLogicUnit.v
+FC:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ArithmeticLogicUnit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@arithmetic@logic@unit
+!i10b 1
+!s100 lb>>823mf??KU<X7^H]8G0
+!s85 0
+!s108 1619971289.305000
+!s107 C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ArithmeticLogicUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3|C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ArithmeticLogicUnit.v|
+!s101 -O0
+vConstantValueGenerator
+IfdLmDIh0O]iM1OZI:mnob3
+VTKkXh_oz9?:l^NA:Y3<f11
+R1
+w1619903747
+8C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ConstantValueGenerator.v
+FC:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ConstantValueGenerator.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@constant@value@generator
+!i10b 1
+!s100 jzY0aOTMh:CPH<5XF__RP3
+!s85 0
+!s108 1619971290.386000
+!s107 C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ConstantValueGenerator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3|C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ConstantValueGenerator.v|
+!s101 -O0
+vDataMemory
+!i10b 1
+!s100 F]XWlSMlHb2OeV6X1NXEX1
+IA7;NOehQEez:DRP=X;T`]3
+V[BHTYS16Wh<SWfX]3;VFf1
+R1
+w1619907652
+8C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/DataMemory.v
+FC:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/DataMemory.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1619971290.691000
+!s107 C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/DataMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3|C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/DataMemory.v|
+!s101 -O0
+R3
+R4
+n@data@memory
+vDecoder_4x16
+IMgn?XKOmo]b`=<KD5Pm]A0
+Vl0dH8_AV[^lg<4DQhN2>Y0
+R1
+w1619864984
+8C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Decoder_4x16.v
+FC:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Decoder_4x16.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@decoder_4x16
+!i10b 1
+!s100 1nikcU<DoPP[WZbhg[nb42
+!s85 0
+!s108 1619971289.723000
+!s107 C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Decoder_4x16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3|C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Decoder_4x16.v|
+!s101 -O0
+vImmExtender
+IDo1gIn_bVhYZ5GmkH6Fe;1
+Vlf9Bg27@GzgK]?zn4L>jZ1
+R1
+w1619903692
+8C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ImmExtender.v
+FC:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ImmExtender.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@imm@extender
+!i10b 1
+!s100 l1M7Ri_B38Rh]]a>MXK7z1
+!s85 0
+!s108 1619971289.584000
+!s107 C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ImmExtender.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3|C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ImmExtender.v|
+!s101 -O0
+vInstructionMemory
+IeMcWenzYPXEme9blj>fKk1
+V;UF@:dNPLmfZhUHd=iE3m3
+R1
+w1619970883
+8C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/InstructionMemory.v
+FC:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/InstructionMemory.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@instruction@memory
+!i10b 1
+!s100 WHo37VbgWz73gX92m4TkV0
+!s85 0
+!s108 1619971290.554000
+!s107 C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/InstructionMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3|C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/InstructionMemory.v|
+!s101 -O0
+vMUX_16x1
+I9E7R:eDiezV`K^WQ_dNP10
+V2P[H5BHHX`HmI1^kWaeQN3
+R1
+w1619903537
+8C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_16x1.v
+FC:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_16x1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@m@u@x_16x1
+!i10b 1
+!s100 :L]hkngOnBIaMog]B[1Vj3
+!s85 0
+!s108 1619971289.999000
+!s107 C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_16x1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3|C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_16x1.v|
+!s101 -O0
+vMUX_2x1
+IMa^1TP^^e:@ioOZRc0MbZ1
+V`lXfYeX^z<8^F]EcFd0KH0
+R1
+w1619968224
+8C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_2x1.v
+FC:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_2x1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@m@u@x_2x1
+!i10b 1
+!s100 5Xf=b[75>lJ2Z2JWfSnVa0
+!s85 0
+!s108 1619971289.861000
+!s107 C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_2x1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3|C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_2x1.v|
+!s101 -O0
+vNormalRegister
+IVoEEWlWze9l^@XVbH<aDh1
+ViJHIV5F8<E7VPQDR2?`fd0
+R1
+w1619863500
+8C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/NormalRegister.v
+FC:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/NormalRegister.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@normal@register
+!i10b 1
+!s100 b7R]fhg2fY>;m6JEki:7a1
+!s85 0
+!s108 1619971290.103000
+!s107 C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/NormalRegister.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3|C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/NormalRegister.v|
+!s101 -O0
+vRegister_WriteEnable
+IZRmZ;Cb>ZXg_]]V[W]?X42
+V5fT9PV:Om31`?NnoLgHSk1
+R1
+w1619863405
+8C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Register_WriteEnable.v
+FC:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Register_WriteEnable.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@register_@write@enable
+!i10b 1
+!s100 ==;SaElJj5j8GTUObjmD?3
+!s85 0
+!s108 1619971290.244000
+!s107 C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Register_WriteEnable.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3|C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Register_WriteEnable.v|
+!s101 -O0
+vRegisterFile
+IoQACiW47mKjS<QZHN5iaF1
+V77l9DS>T0aJD<CZhM41[B2
+R1
+w1619969892
+8C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/RegisterFile.v
+FC:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/RegisterFile.v
+L0 1
+R2
+r1
+31
+R3
+n@register@file
+R4
+!i10b 1
+!s100 d@dVmO^2>`]0CcPI<D0P=3
+!s85 0
+!s108 1619971289.147000
+!s107 C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/RegisterFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3|C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/RegisterFile.v|
+!s101 -O0

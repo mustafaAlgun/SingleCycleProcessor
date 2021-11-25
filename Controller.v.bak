@@ -1,0 +1,25 @@
+module Controller(Instruction,ALUFlags,Flags_in,Flags_out,
+							PCSrc,RegSrc,RegWrite,ALUSrc,ALUControl,ExtendSrc,MemWrite,ResultSrc);
+input [31:0] Instruction;
+//ALU flags and current NZCV flags
+input [3:0] ALUFlags,Flags_in;
+//Updated NZCV flags after operation
+output wire [3:0] Flags_out;
+//Control Signals
+output wire PCSrc,RegSrc,RegWrite,ALUSrc,ExtendSrc,MemWrite,ResultSrc;
+output wire [2:0] ALUControl;
+//Intermediate control signals inside controller
+wire RegW,MemW,ALUOp;
+wire [1:0] FlagW;
+//Instantiate parts of controller
+Main_Decoder main_decoder (.opcode(Instruction[27:26]),.funct_4_0(Instruction[24:20]),.RegW(RegW),.MemW(MemW),
+									.ALUSrc(ALUSrc),.ResultSrc(ResultSrc),.ExtendSrc(ExtendSrc),.RegSrc(RegSrc),.ALUOp(ALUOp));
+ALU_Decoder alu_decoder (.ALUOp(ALUOp),.funct_4_0(Instruction[24:20]),.ALUControl(ALUControl),.FlagW(FlagW),.sh(Instruction[6:5]));
+Conditional_Logic conditional_logic (.FlagW(FlagW),.RegW(RegW),.MemW(MemW),
+												.Flags_in(Flags_in),.Cond(Instruction[31:28]),.ALUFlags(ALUFlags),
+												.RegWrite(RegWrite),.MemWrite(MemWrite),.PCSrc(PCSrc),.Flags_out(Flags_out));
+always @ (*) begin
+	$display("Instruction=%h",Instruction);
+end
+	
+endmodule

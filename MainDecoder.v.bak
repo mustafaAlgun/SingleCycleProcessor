@@ -1,0 +1,59 @@
+module MainDecoder(opcode,funct_4_0,RegW,MemW,ALUSrc,ResultSrc,ExtendSrc,RegSrc,ALUOp);
+input [1:0] opcode;
+input [4:0] funct_4_0;
+//Input controls for conditional logic part
+//initialize as 0
+output reg RegW=0,MemW=0,ALUSrc=0,ResultSrc=0,ExtendSrc=0,RegSrc=0,ALUOp=0;
+
+always @(*) begin
+	case (opcode)
+		//Data processing operation
+		2'b00: begin					
+						MemW=0;
+						ResultSrc=1;
+						ExtendSrc=0;					
+						ALUOp=1;
+						//CMP operation
+						if(funct_4_0[4:1]==4'b1010) begin
+							RegW=0;
+							RegSrc=0;
+							ALUSrc=0;
+						end
+						//shift operations
+						else if (funct_4_0[4:1]==4'b1101) begin
+							RegW=1;
+							ALUSrc=1;
+						end
+						//other Data processing operations	
+						else begin
+							RegW=1;
+							RegSrc=1;
+							ALUSrc=0;
+						end
+				end
+		//Memory operation
+		2'b01: begin
+					//LDR operation
+					if(funct_4_0[0]) begin
+						RegW=1;
+						MemW=0;
+						ALUSrc=1;
+						ResultSrc=0;
+						ExtendSrc=1;
+						ALUOp=0;
+					end
+					//STR operation
+					else begin
+						RegW=0;
+						MemW=1;
+						ALUSrc=1;
+						ExtendSrc=1;
+						RegSrc=0;
+						ALUOp=0;
+					end
+				end
+	endcase
+end
+
+endmodule
+						

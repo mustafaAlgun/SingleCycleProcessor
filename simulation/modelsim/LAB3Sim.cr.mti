@@ -1,0 +1,141 @@
+{C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Register_WriteEnable.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Register_WriteEnable.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Register_WriteEnable
+
+Top level modules:
+	Register_WriteEnable
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/SingleCycleProcessor_tb.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/SingleCycleProcessor_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SingleCycleProcessor_tb
+
+Top level modules:
+	SingleCycleProcessor_tb
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Decoder_4x16.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Decoder_4x16.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Decoder_4x16
+
+Top level modules:
+	Decoder_4x16
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_16x1.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_16x1.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MUX_16x1
+
+Top level modules:
+	MUX_16x1
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/SingleCycleProcessor.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/SingleCycleProcessor.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SingleCycleProcessor
+
+Top level modules:
+	SingleCycleProcessor
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ConditionalLogicUnit.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ConditionalLogicUnit.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ConditionalLogicUnit
+
+Top level modules:
+	ConditionalLogicUnit
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_2x1.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_2x1.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MUX_2x1
+
+Top level modules:
+	MUX_2x1
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/RegisterFile.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/RegisterFile.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/NormalRegister.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/NormalRegister.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module NormalRegister
+
+Top level modules:
+	NormalRegister
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_4x1.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_4x1.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MUX_4x1
+
+Top level modules:
+	MUX_4x1
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ConstantValueGenerator.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ConstantValueGenerator.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ConstantValueGenerator
+
+Top level modules:
+	ConstantValueGenerator
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Adder.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Adder.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ALUDecoder.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ALUDecoder.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALUDecoder
+
+Top level modules:
+	ALUDecoder
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ArithmeticLogicUnit.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ArithmeticLogicUnit.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ArithmeticLogicUnit
+
+Top level modules:
+	ArithmeticLogicUnit
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/DatapathDesign.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/DatapathDesign.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DatapathDesign
+
+Top level modules:
+	DatapathDesign
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ImmExtender.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ImmExtender.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ImmExtender
+
+Top level modules:
+	ImmExtender
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/DataMemory.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/DataMemory.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/InstructionMemory.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/InstructionMemory.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module InstructionMemory
+
+Top level modules:
+	InstructionMemory
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MainDecoder.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MainDecoder.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MainDecoder
+
+Top level modules:
+	MainDecoder
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Controller.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Controller.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}}

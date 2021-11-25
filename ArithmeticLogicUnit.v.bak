@@ -1,0 +1,70 @@
+module ArithmeticLogicUnit #(parameter W=32)(alu_control,in1,in2,out,CO,OVF,Z,N);
+input [W-1:0] in1,in2;
+output reg [W-1:0] out;
+input [2:0] alu_control;
+//will be used to calculate substraction
+reg [W-1:0] complement;
+output reg CO,OVF,Z,N;
+always @(*) begin
+	case(alu_control)
+		3'b000: begin
+						{CO,out}=in1+in2;
+						// if signs of inputs are same and sign of output is different than sign of input1 set overflow flag for A+B
+						if(~(in1[W-1]^in2[W-1]) & (in1[W-1]^out[W-1]) )
+							OVF=1;
+						else
+							OVF=0;
+					end
+		3'b001: begin
+						complement=~in2;
+						//in1+~in2+1 operation
+						{CO,out}=in1+complement+1;
+						//if signs of inputs are different and sign of output is also different than sign of input1 set overflow flag for A-B
+						if((in1[W-1]^in2[W-1])& (in1[W-1]^out[W-1]))
+							OVF=1;
+						else
+							OVF=0;
+					end
+		3'b010: begin 
+						complement=~in1;
+						//in2+~in1+1 operation
+						{CO,out}=in2+complement+1;
+						//if signs of inputs are different and sign of output is also different than sign of input2 set overflow flag for B-A
+						if((in1[W-1]^in2[W-1])& (in2[W-1]^out[W-1]))
+							OVF=1;
+						else
+							OVF=0;
+					end
+		3'b011: begin 
+						//AND operation
+						out=in1&in2;
+						CO=0;
+						OVF=0;
+					end
+		3'b100: begin
+						//OR operation
+						out= in1|in2;
+						CO=0;
+						OVF=0;
+					end
+					//logical shift right, select least significant 5 bit of in2 to be able to shift 32 bit
+		3'b101: begin
+						out=in1>>in2[4:0];
+						CO=0;
+						OVF=0;
+					end
+					//logical shift left, select least significant 5 bit of in2 to be able to shift 32 bit
+		3'b110: begin
+						out=in1<<in2[4:0];
+						CO=0;
+						OVF=0;	
+					end
+	endcase
+	//assign sign bit of output to negative flag
+	N=out[W-1];
+	//assign NOR of output bits to zero flag
+	Z=~(|out);
+end
+endmodule
+						
+	

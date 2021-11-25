@@ -1,0 +1,23 @@
+module SingleCycleProcessor_tb();
+reg clk;
+wire [3:0] NZCV;
+wire [31:0] RD1,RD2;
+integer vectornum;
+reg [31:0] testvector [0:15];
+Single_Cycle single_cycle(.clock(clk),.NZCV(NZCV),.Register1(RD1),.Register2(RD2));
+
+initial begin
+	$readmemh("inst_memory.txt",testvector);
+	vectornum=0;
+end
+always begin
+	clk=0; #5;
+	clk=1; #5;
+end
+
+always @ (posedge clk) begin
+	vectornum=vectornum+1;
+	if(testvector[vectornum]===32'bx)
+		$stop;
+end
+endmodule

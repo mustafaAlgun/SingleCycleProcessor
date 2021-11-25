@@ -1,0 +1,2 @@
+# Compile of SingleCycleProcessor_tb.v was successful.
+vsim +altera -do LAB3_run_msim_rtl_verilog.do -l msim_transcript -gui work.SingleCycleProcessor_tb

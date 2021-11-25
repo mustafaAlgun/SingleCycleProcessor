@@ -1,0 +1,15 @@
+{C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/SingleCycleProcessor.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/SingleCycleProcessor.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SingleCycleProcessor
+
+Top level modules:
+	SingleCycleProcessor
+
+} {} {}} {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/SingleCycleProcessor_tb.v} {1 {vlog -work work {C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/SingleCycleProcessor_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SingleCycleProcessor_tb
+
+Top level modules:
+	SingleCycleProcessor_tb
+
+} {} {}}

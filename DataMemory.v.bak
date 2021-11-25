@@ -1,0 +1,31 @@
+module DataMemory #(parameter W=32,D=8)(clk,address,WD,RD,WE);
+input clk;
+//memory write enable
+input WE;
+//memory address
+input [W-1:0] address;
+//write data
+input [W-1:0] WD;
+//read data
+output wire [W-1:0] RD;
+//default 32 byte asynchronous read synchronous write data memory
+//default width:32 bit depth:8
+//Word addressable data memory
+//Normally ARM has 32 bit address space for data memory however since I created memory as 8 depth, 3 bit is enough to reach all
+//addresses 2^3=8. Therefore I will use least significand 3 bit of 32 bit address input
+reg [W-1:0] data_mem [0:D-1];
+initial begin
+	$readmemh("data_memory.txt",data_mem);
+end
+wire [2:0] memory_address=address[2:0];
+//asynchronous read from memory address
+assign RD=data_mem[memory_address];
+//synchronous write to memory address
+always @ (posedge clk) begin
+	//if enable is 1 write data to memory
+	if(WE)
+		data_mem[memory_address]<=WD;
+end
+endmodule
+
+

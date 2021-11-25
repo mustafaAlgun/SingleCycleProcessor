@@ -1,0 +1,86 @@
+module RegisterFile #(parameter W=32)(clk,write_enable,A1,A2,A3,RD1,RD2,WD3,R15);
+input write_enable,clk;
+//A1 and A2 output source addresses A3 input destination address
+input [3:0] A1,A2,A3;
+input [W-1:0] WD3,R15;
+output wire [W-1:0] RD1,RD2;
+
+wire [15:0] write_address;
+//Decoding the destination address of input 
+decoder_4to16 A3_decoder (.a0(A3[0]),.a1(A3[1]),.a2(A3[2]),.a3(A3[3]),
+								.d0(write_address[0]),.d1(write_address[1]),.d2(write_address[2]),.d3(write_address[3]),
+								.d4(write_address[4]),.d5(write_address[5]),.d6(write_address[6]),.d7(write_address[7]),
+								.d8(write_address[8]),.d9(write_address[9]),.d10(write_address[10]),.d11(write_address[11]),
+								.d12(write_address[12]),.d13(write_address[13]),.d14(write_address[14]),.d15(write_address[15]));
+//Outputs of registers								
+wire [W-1:0] R0_out;
+wire [W-1:0] R1_out;
+wire [W-1:0] R2_out;
+wire [W-1:0] R3_out;
+wire [W-1:0] R4_out;
+wire [W-1:0] R5_out;
+wire [W-1:0] R6_out;
+wire [W-1:0] R7_out;
+wire [W-1:0] R8_out;
+wire [W-1:0] R9_out;
+wire [W-1:0] R10_out;
+wire [W-1:0] R11_out;
+wire [W-1:0] R12_out;
+wire [W-1:0] R13_out;
+wire [W-1:0] R14_out;
+wire [W-1:0] R15_out;
+//assign R15 output to PC+8 which is R15 input
+assign R15_out=R15;
+//Write enable signals for registers
+//R15 register write is not included because R15 is program counter and writing to PC is not handled in register file
+wire R0_enable,R1_enable,R2_enable,R3_enable,
+	  R4_enable,R5_enable,R6_enable,R7_enable,
+	  R8_enable,R9_enable,R10_enable,R11_enable,
+	  R12_enable,R13_enable,R14_enable;
+assign R0_enable=write_enable & write_address[0]; 
+assign R1_enable=write_enable & write_address[1]; 
+assign R2_enable=write_enable & write_address[2]; 
+assign R3_enable=write_enable & write_address[3]; 
+assign R4_enable=write_enable & write_address[4]; 
+assign R5_enable=write_enable & write_address[5]; 
+assign R6_enable=write_enable & write_address[6]; 
+assign R7_enable=write_enable & write_address[7];
+assign R8_enable=write_enable & write_address[8]; 
+assign R9_enable=write_enable & write_address[9]; 
+assign R10_enable=write_enable & write_address[10]; 
+assign R11_enable=write_enable & write_address[11];
+assign R12_enable=write_enable & write_address[12]; 
+assign R13_enable=write_enable & write_address[13]; 
+assign R14_enable=write_enable & write_address[14]; 
+//14 registers again R15 which is PC is excluded
+reg_sync_r_WE #(.W(W)) R0(.clk(clk),.reset(0),.data(WD3),.out(R0_out),.enable(R0_enable));
+reg_sync_r_WE #(.W(W)) R1(.clk(clk),.reset(0),.data(WD3),.out(R1_out),.enable(R1_enable));
+reg_sync_r_WE #(.W(W)) R2(.clk(clk),.reset(0),.data(WD3),.out(R2_out),.enable(R2_enable));
+reg_sync_r_WE #(.W(W)) R3(.clk(clk),.reset(0),.data(WD3),.out(R3_out),.enable(R3_enable));
+reg_sync_r_WE #(.W(W)) R4(.clk(clk),.reset(0),.data(WD3),.out(R4_out),.enable(R4_enable));
+reg_sync_r_WE #(.W(W)) R5(.clk(clk),.reset(0),.data(WD3),.out(R5_out),.enable(R5_enable));
+reg_sync_r_WE #(.W(W)) R6(.clk(clk),.reset(0),.data(WD3),.out(R6_out),.enable(R6_enable));
+reg_sync_r_WE #(.W(W)) R7(.clk(clk),.reset(0),.data(WD3),.out(R7_out),.enable(R7_enable));
+reg_sync_r_WE #(.W(W)) R8(.clk(clk),.reset(0),.data(WD3),.out(R8_out),.enable(R8_enable));
+reg_sync_r_WE #(.W(W)) R9(.clk(clk),.reset(0),.data(WD3),.out(R9_out),.enable(R9_enable));
+reg_sync_r_WE #(.W(W)) R10(.clk(clk),.reset(0),.data(WD3),.out(R10_out),.enable(R10_enable));
+reg_sync_r_WE #(.W(W)) R11(.clk(clk),.reset(0),.data(WD3),.out(R11_out),.enable(R11_enable));
+reg_sync_r_WE #(.W(W)) R12(.clk(clk),.reset(0),.data(WD3),.out(R12_out),.enable(R12_enable));
+reg_sync_r_WE #(.W(W)) R13(.clk(clk),.reset(0),.data(WD3),.out(R13_out),.enable(R13_enable));
+reg_sync_r_WE #(.W(W)) R14(.clk(clk),.reset(0),.data(WD3),.out(R14_out),.enable(R14_enable));
+
+//Selection of the outputs according to source addresses
+mux_16to1 #(.W(W)) out1_mux (.sel(A1),
+				.in0(R0_out),.in1(R1_out),.in2(R2_out),.in3(R3_out),
+				.in4(R4_out),.in5(R5_out),.in6(R6_out),.in7(R7_out),
+				.in8(R8_out),.in9(R9_out),.in10(R10_out),.in11(R11_out),
+				.in12(R12_out),.in13(R13_out),.in14(R14_out),.in15(R15_out),
+				.out(RD1));
+mux_16to1 #(.W(W)) out2_mux (.sel(A2),
+				.in0(R0_out),.in1(R1_out),.in2(R2_out),.in3(R3_out),
+				.in4(R4_out),.in5(R5_out),.in6(R6_out),.in7(R7_out),
+				.in8(R8_out),.in9(R9_out),.in10(R10_out),.in11(R11_out),
+				.in12(R12_out),.in13(R13_out),.in14(R14_out),.in15(R15_out),
+				.out(RD2));
+endmodule
+

@@ -1,0 +1,16 @@
+module NormalRegister #(parameter W=32)(clk,data,out,reset);
+input clk;
+input reset;
+input [W-1:0] data;
+//initialize register output as 0
+output reg [W-1:0] out=0;
+always @ (posedge clk) begin
+	//clear register if reset is 1
+	if(reset)
+		out<=0;
+	//otherwise load the input
+	else
+		out<=data;
+end
+endmodule
+		

@@ -1,0 +1,13 @@
+07 20 85 E3//ORR R2,R5,R7
+07 20 85 13//ORRNE R2,R5,R7
+00 11 A1 E1//LSL R1,R1,#2
+01 10 80 E5//STR R1,[R0,#1]
+01 50 90 E5//LDR R5,[R0,#1]
+00 20 82 E0//ADD R2,R2,R0
+07 20 85 E3//ORR R2,R5,R7
+06 28 55 E2//SUBS R4,R5,R6
+06 20 90 E5//LDR R2,[R0,#6]
+05 80 02 02//ANDEQ R8,R2,R5
+// it is stored as 02 02 80 05 in the memory.
+// cond/op/I/cmd/S/rB/rA/ShiftAmount/sh/0/rC <- Instruction structure
+

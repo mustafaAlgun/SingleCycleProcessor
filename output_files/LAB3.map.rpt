@@ -1,0 +1,956 @@
+Analysis & Synthesis report for LAB3
+Sun May 02 18:57:46 2021
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: DatapathDesign:inst7|ArithmeticLogicUnit:inst18
+ 11. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19
+ 12. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R0
+ 13. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R1
+ 14. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R2
+ 15. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R3
+ 16. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R4
+ 17. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R5
+ 18. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R6
+ 19. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R7
+ 20. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R8
+ 21. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R9
+ 22. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R10
+ 23. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R11
+ 24. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R12
+ 25. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R13
+ 26. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R14
+ 27. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|MUX_16x1:MUX_OUTPUT1
+ 28. Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|MUX_16x1:MUX_OUTPUT2
+ 29. Parameter Settings for User Entity Instance: DatapathDesign:inst7|InstructionMemory:inst5
+ 30. Parameter Settings for User Entity Instance: DatapathDesign:inst7|NormalRegister:inst4
+ 31. Parameter Settings for User Entity Instance: DatapathDesign:inst7|MUX_2x1:inst2
+ 32. Parameter Settings for User Entity Instance: DatapathDesign:inst7|Adder:inst12
+ 33. Parameter Settings for User Entity Instance: DatapathDesign:inst7|ConstantValueGenerator:inst11
+ 34. Parameter Settings for User Entity Instance: DatapathDesign:inst7|MUX_2x1:inst14
+ 35. Parameter Settings for User Entity Instance: DatapathDesign:inst7|DataMemory:inst15
+ 36. Parameter Settings for User Entity Instance: DatapathDesign:inst7|MUX_2x1:inst20
+ 37. Parameter Settings for User Entity Instance: DatapathDesign:inst7|Adder:inst22
+ 38. Parameter Settings for User Entity Instance: DatapathDesign:inst7|MUX_2x1:inst
+ 39. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R14"
+ 40. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R13"
+ 41. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R12"
+ 42. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R11"
+ 43. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R10"
+ 44. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R9"
+ 45. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R8"
+ 46. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R7"
+ 47. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R6"
+ 48. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R5"
+ 49. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R4"
+ 50. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R3"
+ 51. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R2"
+ 52. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R1"
+ 53. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R0"
+ 54. Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Decoder_4x16:DEC_A3"
+ 55. Elapsed Time Per Partition
+ 56. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun May 02 18:57:46 2021      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; LAB3                                       ;
+; Top-level Entity Name              ; SingleCycleProcessor                       ;
+; Family                             ; Cyclone IV GX                              ;
+; Total logic elements               ; 0                                          ;
+;     Total combinational functions  ; 0                                          ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 8                                          ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total GXB Receiver Channel PCS     ; 0                                          ;
+; Total GXB Receiver Channel PMA     ; 0                                          ;
+; Total GXB Transmitter Channel PCS  ; 0                                          ;
+; Total GXB Transmitter Channel PMA  ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                          ;
++----------------------------------------------------------------------------+----------------------+--------------------+
+; Option                                                                     ; Setting              ; Default Value      ;
++----------------------------------------------------------------------------+----------------------+--------------------+
+; Top-level entity name                                                      ; SingleCycleProcessor ; LAB3               ;
+; Family name                                                                ; Cyclone IV GX        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                  ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                   ; On                 ;
+; Enable compact report table                                                ; Off                  ; Off                ;
+; Restructure Multiplexers                                                   ; Auto                 ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                  ; Off                ;
+; Preserve fewer node names                                                  ; On                   ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                  ; Off                ;
+; Verilog Version                                                            ; Verilog_2001         ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993            ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto                 ; Auto               ;
+; Safe State Machine                                                         ; Off                  ; Off                ;
+; Extract Verilog State Machines                                             ; On                   ; On                 ;
+; Extract VHDL State Machines                                                ; On                   ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                  ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000                 ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                  ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                   ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                   ; On                 ;
+; Parallel Synthesis                                                         ; On                   ; On                 ;
+; DSP Block Balancing                                                        ; Auto                 ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                   ; On                 ;
+; Power-Up Don't Care                                                        ; On                   ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                  ; Off                ;
+; Remove Duplicate Registers                                                 ; On                   ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                  ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                  ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                  ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                  ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                  ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                   ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                  ; Off                ;
+; Optimization Technique                                                     ; Balanced             ; Balanced           ;
+; Carry Chain Length                                                         ; 70                   ; 70                 ;
+; Auto Carry Chains                                                          ; On                   ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                   ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                  ; Off                ;
+; Auto ROM Replacement                                                       ; On                   ; On                 ;
+; Auto RAM Replacement                                                       ; On                   ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                   ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto                 ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                 ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                   ; On                 ;
+; Strict RAM Replacement                                                     ; Off                  ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                   ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                  ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                   ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                  ; Off                ;
+; Auto Resource Sharing                                                      ; Off                  ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                  ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                  ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                  ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                   ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                  ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                   ; On                 ;
+; Report Parameter Settings                                                  ; On                   ; On                 ;
+; Report Source Assignments                                                  ; On                   ; On                 ;
+; Report Connectivity Checks                                                 ; On                   ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                  ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                    ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation   ; Normal compilation ;
+; HDL message level                                                          ; Level2               ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                  ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                 ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                 ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                  ; 100                ;
+; Clock MUX Protection                                                       ; On                   ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                  ; Off                ;
+; Block Design Naming                                                        ; Auto                 ; Auto               ;
+; SDC constraint protection                                                  ; Off                  ; Off                ;
+; Synthesis Effort                                                           ; Auto                 ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                   ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                  ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium               ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto                 ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                   ; On                 ;
+; Synthesis Seed                                                             ; 1                    ; 1                  ;
++----------------------------------------------------------------------------+----------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+; DatapathDesign.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/DatapathDesign.bdf       ;         ;
+; InstructionMemory.v              ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/InstructionMemory.v      ;         ;
+; DataMemory.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/DataMemory.v             ;         ;
+; RegisterFile.v                   ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/RegisterFile.v           ;         ;
+; ArithmeticLogicUnit.v            ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ArithmeticLogicUnit.v    ;         ;
+; Adder.v                          ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Adder.v                  ;         ;
+; ImmExtender.v                    ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ImmExtender.v            ;         ;
+; Decoder_4x16.v                   ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Decoder_4x16.v           ;         ;
+; MUX_2x1.v                        ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_2x1.v                ;         ;
+; MUX_16x1.v                       ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MUX_16x1.v               ;         ;
+; NormalRegister.v                 ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/NormalRegister.v         ;         ;
+; Register_WriteEnable.v           ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Register_WriteEnable.v   ;         ;
+; ConstantValueGenerator.v         ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ConstantValueGenerator.v ;         ;
+; Controller.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/Controller.v             ;         ;
+; MainDecoder.v                    ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/MainDecoder.v            ;         ;
+; ALUDecoder.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ALUDecoder.v             ;         ;
+; ConditionalLogicUnit.v           ; yes             ; User Verilog HDL File              ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/ConditionalLogicUnit.v   ;         ;
+; SingleCycleProcessor.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/SingleCycleProcessor.bdf ;         ;
+; instructionmem.txt               ; yes             ; Auto-Found File                    ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/instructionmem.txt       ;         ;
+; datamem.txt                      ; yes             ; Auto-Found File                    ; C:/Users/Mustafa/Desktop/METU/2021 Spring/EE446/LAB3/datamem.txt              ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 8                ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; RegSrc~output    ;
+; Maximum fan-out          ; 1                ;
+; Total fan-out            ; 8                ;
+; Average fan-out          ; 0.50             ;
++--------------------------+------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
+; |SingleCycleProcessor      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 8    ; 0            ; |SingleCycleProcessor ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                       ;
++-------------------------------------------------------------------------------------+--------------------+
+; Register name                                                                       ; Reason for Removal ;
++-------------------------------------------------------------------------------------+--------------------+
+; DatapathDesign:inst7|NormalRegister:inst4|OutputData[0..31]                         ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R14|OutputData[0..31] ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R13|OutputData[0..31] ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R12|OutputData[0..31] ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R11|OutputData[0..31] ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R10|OutputData[0..31] ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R9|OutputData[0..31]  ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R8|OutputData[0..31]  ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R7|OutputData[0..31]  ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R6|OutputData[0..31]  ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R5|OutputData[0..31]  ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R4|OutputData[0..31]  ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R3|OutputData[0..31]  ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R2|OutputData[0..31]  ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R1|OutputData[0..31]  ; Lost fanout        ;
+; DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R0|OutputData[0..31]  ; Lost fanout        ;
+; Total Number of Removed Registers = 512                                             ;                    ;
++-------------------------------------------------------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|ArithmeticLogicUnit:inst18 ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R0 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R1 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R2 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R3 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R4 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R5 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R6 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R7 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R8 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R9 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R10 ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R11 ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R12 ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R13 ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R14 ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|MUX_16x1:MUX_OUTPUT1 ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|RegisterFile:inst19|MUX_16x1:MUX_OUTPUT2 ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|InstructionMemory:inst5 ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; W              ; 8     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|NormalRegister:inst4 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|MUX_2x1:inst2 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|Adder:inst12 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|ConstantValueGenerator:inst11 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                                         ;
+; value          ; 4     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|MUX_2x1:inst14 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|DataMemory:inst15 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|MUX_2x1:inst20 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; W              ; 4     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|Adder:inst22 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DatapathDesign:inst7|MUX_2x1:inst ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R14"                                                                                                                     ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R13"                                                                                                                     ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R12"                                                                                                                     ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R11"                                                                                                                     ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R10"                                                                                                                     ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R9"                                                                                                                      ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R8"                                                                                                                      ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R7"                                                                                                                      ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R6"                                                                                                                      ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R5"                                                                                                                      ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R4"                                                                                                                      ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R3"                                                                                                                      ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R2"                                                                                                                      ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R1"                                                                                                                      ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R0"                                                                                                                      ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RESET     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; RESET[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DatapathDesign:inst7|RegisterFile:inst19|Decoder_4x16:DEC_A3"                           ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Output15 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Sun May 02 18:57:43 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LAB3 -c LAB3
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file datapathdesign.bdf
+    Info (12023): Found entity 1: DatapathDesign
+Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.v
+    Info (12023): Found entity 1: InstructionMemory
+Info (12021): Found 1 design units, including 1 entities, in source file datamemory.v
+    Info (12023): Found entity 1: DataMemory
+Info (12021): Found 1 design units, including 1 entities, in source file registerfile.v
+    Info (12023): Found entity 1: RegisterFile
+Info (12021): Found 1 design units, including 1 entities, in source file arithmeticlogicunit.v
+    Info (12023): Found entity 1: ArithmeticLogicUnit
+Info (12021): Found 1 design units, including 1 entities, in source file adder.v
+    Info (12023): Found entity 1: Adder
+Info (12021): Found 1 design units, including 1 entities, in source file immextender.v
+    Info (12023): Found entity 1: ImmExtender
+Info (12021): Found 1 design units, including 1 entities, in source file decoder_4x16.v
+    Info (12023): Found entity 1: Decoder_4x16
+Info (12021): Found 1 design units, including 1 entities, in source file mux_2x1.v
+    Info (12023): Found entity 1: MUX_2x1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_4x1.v
+    Info (12023): Found entity 1: MUX_4x1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_16x1.v
+    Info (12023): Found entity 1: MUX_16x1
+Info (12021): Found 1 design units, including 1 entities, in source file normalregister.v
+    Info (12023): Found entity 1: NormalRegister
+Info (12021): Found 1 design units, including 1 entities, in source file register_writeenable.v
+    Info (12023): Found entity 1: Register_WriteEnable
+Info (12021): Found 1 design units, including 1 entities, in source file constantvaluegenerator.v
+    Info (12023): Found entity 1: ConstantValueGenerator
+Info (12021): Found 1 design units, including 1 entities, in source file controller.v
+    Info (12023): Found entity 1: Controller
+Info (12021): Found 1 design units, including 1 entities, in source file maindecoder.v
+    Info (12023): Found entity 1: MainDecoder
+Info (12021): Found 1 design units, including 1 entities, in source file aludecoder.v
+    Info (12023): Found entity 1: ALUDecoder
+Info (12021): Found 1 design units, including 1 entities, in source file conditionallogicunit.v
+    Info (12023): Found entity 1: ConditionalLogicUnit
+Info (12021): Found 1 design units, including 1 entities, in source file singlecycleprocessor.bdf
+    Info (12023): Found entity 1: SingleCycleProcessor
+Info (12021): Found 1 design units, including 1 entities, in source file singlecycleprocessor_tb.v
+    Info (12023): Found entity 1: SingleCycleProcessor_tb
+Warning (10236): Verilog HDL Implicit Net warning at SingleCycleProcessor_tb.v(7): created implicit net for "MemtoReg"
+Warning (10236): Verilog HDL Implicit Net warning at SingleCycleProcessor_tb.v(7): created implicit net for "MemWrite"
+Warning (10236): Verilog HDL Implicit Net warning at SingleCycleProcessor_tb.v(7): created implicit net for "ImmSrc"
+Warning (10236): Verilog HDL Implicit Net warning at SingleCycleProcessor_tb.v(7): created implicit net for "PCSrc"
+Warning (10236): Verilog HDL Implicit Net warning at SingleCycleProcessor_tb.v(7): created implicit net for "ALUSrc"
+Warning (10236): Verilog HDL Implicit Net warning at SingleCycleProcessor_tb.v(7): created implicit net for "RegWrite"
+Warning (10236): Verilog HDL Implicit Net warning at SingleCycleProcessor_tb.v(7): created implicit net for "RegSrc"
+Info (12127): Elaborating entity "SingleCycleProcessor" for the top level hierarchy
+Info (12128): Elaborating entity "Controller" for hierarchy "Controller:inst1"
+Info (12128): Elaborating entity "ALUDecoder" for hierarchy "Controller:inst1|ALUDecoder:ALU_DEC"
+Warning (10230): Verilog HDL assignment warning at ALUDecoder.v(17): truncated value with size 3 to match size of target (2)
+Warning (10270): Verilog HDL Case Statement warning at ALUDecoder.v(26): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at ALUDecoder.v(24): inferring latch(es) for variable "ALUControl", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ALUDecoder.v(24): inferring latch(es) for variable "FlagW", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "FlagW[0]" at ALUDecoder.v(91)
+Info (10041): Inferred latch for "FlagW[1]" at ALUDecoder.v(91)
+Info (10041): Inferred latch for "ALUControl[0]" at ALUDecoder.v(91)
+Info (10041): Inferred latch for "ALUControl[1]" at ALUDecoder.v(91)
+Info (10041): Inferred latch for "ALUControl[2]" at ALUDecoder.v(91)
+Info (12128): Elaborating entity "MainDecoder" for hierarchy "Controller:inst1|MainDecoder:MAIN_DEC"
+Warning (10270): Verilog HDL Case Statement warning at MainDecoder.v(26): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at MainDecoder.v(26): inferring latch(es) for variable "ImmSrc", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at MainDecoder.v(26): inferring latch(es) for variable "RegSrc", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at MainDecoder.v(26): inferring latch(es) for variable "ALUOp", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at MainDecoder.v(26): inferring latch(es) for variable "RegW", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at MainDecoder.v(26): inferring latch(es) for variable "MemW", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at MainDecoder.v(26): inferring latch(es) for variable "ALUSrc", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at MainDecoder.v(26): inferring latch(es) for variable "MemtoReg", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "MemtoReg" at MainDecoder.v(26)
+Info (10041): Inferred latch for "ALUSrc" at MainDecoder.v(26)
+Info (10041): Inferred latch for "MemW" at MainDecoder.v(26)
+Info (10041): Inferred latch for "RegW" at MainDecoder.v(26)
+Info (10041): Inferred latch for "ALUOp" at MainDecoder.v(26)
+Info (10041): Inferred latch for "RegSrc" at MainDecoder.v(26)
+Info (10041): Inferred latch for "ImmSrc" at MainDecoder.v(26)
+Info (12128): Elaborating entity "ConditionalLogicUnit" for hierarchy "Controller:inst1|ConditionalLogicUnit:ConditionalLogic"
+Warning (10270): Verilog HDL Case Statement warning at ConditionalLogicUnit.v(30): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at ConditionalLogicUnit.v(30): inferring latch(es) for variable "CondEx", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "CondEx" at ConditionalLogicUnit.v(30)
+Info (12128): Elaborating entity "DatapathDesign" for hierarchy "DatapathDesign:inst7"
+Info (12128): Elaborating entity "ArithmeticLogicUnit" for hierarchy "DatapathDesign:inst7|ArithmeticLogicUnit:inst18"
+Warning (10270): Verilog HDL Case Statement warning at ArithmeticLogicUnit.v(22): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at ArithmeticLogicUnit.v(22): inferring latch(es) for variable "DataOut", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ArithmeticLogicUnit.v(22): inferring latch(es) for variable "CO", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ArithmeticLogicUnit.v(22): inferring latch(es) for variable "OVF", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ArithmeticLogicUnit.v(22): inferring latch(es) for variable "OnesComplement", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "OVF" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "CO" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[0]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[1]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[2]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[3]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[4]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[5]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[6]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[7]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[8]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[9]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[10]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[11]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[12]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[13]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[14]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[15]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[16]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[17]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[18]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[19]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[20]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[21]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[22]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[23]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[24]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[25]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[26]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[27]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[28]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[29]" at ArithmeticLogicUnit.v(22)
+Info (10041): Inferred latch for "DataOut[30]" at ArithmeticLogicUnit.v(22)
+Info (12128): Elaborating entity "RegisterFile" for hierarchy "DatapathDesign:inst7|RegisterFile:inst19"
+Info (12128): Elaborating entity "Decoder_4x16" for hierarchy "DatapathDesign:inst7|RegisterFile:inst19|Decoder_4x16:DEC_A3"
+Info (12128): Elaborating entity "Register_WriteEnable" for hierarchy "DatapathDesign:inst7|RegisterFile:inst19|Register_WriteEnable:R0"
+Info (12128): Elaborating entity "MUX_16x1" for hierarchy "DatapathDesign:inst7|RegisterFile:inst19|MUX_16x1:MUX_OUTPUT1"
+Info (12128): Elaborating entity "InstructionMemory" for hierarchy "DatapathDesign:inst7|InstructionMemory:inst5"
+Warning (10850): Verilog HDL warning at InstructionMemory.v(32): number of words (16) in memory file does not match the number of elements in the address range [0:63]
+Warning (10855): Verilog HDL warning at InstructionMemory.v(31): initial value for variable InstructionMemory should be constant
+Warning (10030): Net "InstructionMemory" at InstructionMemory.v(29) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "NormalRegister" for hierarchy "DatapathDesign:inst7|NormalRegister:inst4"
+Info (12128): Elaborating entity "MUX_2x1" for hierarchy "DatapathDesign:inst7|MUX_2x1:inst2"
+Info (12128): Elaborating entity "Adder" for hierarchy "DatapathDesign:inst7|Adder:inst12"
+Info (12128): Elaborating entity "ConstantValueGenerator" for hierarchy "DatapathDesign:inst7|ConstantValueGenerator:inst11"
+Info (12128): Elaborating entity "DataMemory" for hierarchy "DatapathDesign:inst7|DataMemory:inst15"
+Info (12128): Elaborating entity "MUX_2x1" for hierarchy "DatapathDesign:inst7|MUX_2x1:inst20"
+Info (12128): Elaborating entity "ImmExtender" for hierarchy "DatapathDesign:inst7|ImmExtender:inst17"
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[5]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[4]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[3]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[2]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[1]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[6]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[0]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[7]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[8]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[9]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[10]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[11]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[12]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[13]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[14]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[15]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[16]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[17]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[18]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[19]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[20]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[21]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[22]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[23]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[24]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[25]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[26]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[27]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[28]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[29]" is permanently enabled
+Warning (14026): LATCH primitive "DatapathDesign:inst7|ArithmeticLogicUnit:inst18|DataOut[30]" is permanently enabled
+Warning (12241): 15 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "RegSrc" is stuck at VCC
+    Warning (13410): Pin "RegWrite" is stuck at GND
+    Warning (13410): Pin "ALUSrc" is stuck at GND
+    Warning (13410): Pin "PCSrc" is stuck at GND
+    Warning (13410): Pin "MemWrite" is stuck at GND
+    Warning (13410): Pin "MemtoReg" is stuck at VCC
+    Warning (13410): Pin "ImmSrc" is stuck at GND
+Info (17049): 512 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLK"
+Info (21057): Implemented 8 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 7 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 72 warnings
+    Info: Peak virtual memory: 4672 megabytes
+    Info: Processing ended: Sun May 02 18:57:46 2021
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+
